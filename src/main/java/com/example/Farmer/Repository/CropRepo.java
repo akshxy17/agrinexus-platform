@@ -1,4 +1,4 @@
-package com.example.Farmer.Repository;
+package com.example.Farmer.repository;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.example.Farmer.Entity.Crop;
+import com.example.Farmer.entity.Crop;
 
 @Repository
 public interface CropRepo extends JpaRepository<Crop, Long> {

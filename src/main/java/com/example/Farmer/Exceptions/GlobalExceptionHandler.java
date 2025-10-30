@@ -1,4 +1,4 @@
-package com.example.Farmer.Exceptions;
+package com.example.Farmer.exceptions;
 
 import java.util.HashMap;
 import java.util.Map;

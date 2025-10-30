@@ -1,7 +1,7 @@
-package com.example.Farmer.Entity;
+package com.example.Farmer.entity;
 
-import com.example.Farmer.Entity.Enums.AssetType;
-import com.example.Farmer.Entity.Enums.LandType;
+import com.example.Farmer.entity.Enums.AssetType;
+import com.example.Farmer.entity.Enums.LandType;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Column;

@@ -1,4 +1,4 @@
-package com.example.Farmer.Repository;
+package com.example.Farmer.repository;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.example.Farmer.Entity.Farmer;
+import com.example.Farmer.entity.Farmer;
 
 @Repository
 public interface FarmerRepo extends JpaRepository<Farmer, Long> {

@@ -1,4 +1,4 @@
-package com.example.Farmer.Entity.Enums;
+package com.example.Farmer.entity.Enums;
 
 public enum CropType {
 

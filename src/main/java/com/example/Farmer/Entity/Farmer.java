@@ -1,9 +1,9 @@
-package com.example.Farmer.Entity;
+package com.example.Farmer.entity;
 
 import java.util.List;
 
-import com.example.Farmer.Entity.Enums.FarmingType;
-import com.example.Farmer.Entity.Enums.Gender;
+import com.example.Farmer.entity.Enums.FarmingType;
+import com.example.Farmer.entity.Enums.Gender;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -17,10 +17,12 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -61,4 +63,17 @@ public class Farmer {
     @JsonManagedReference
     @OneToMany(mappedBy = "farmer", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Land> lands;
+
+    @Override
+    public String toString() {
+        return "Farmer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender=" + gender +
+                ", address='" + address + '\'' +
+                ", contactNumber='" + contactNumber + '\'' +
+                ", farmingType=" + farmingType +
+                '}';
+    }
+
 }

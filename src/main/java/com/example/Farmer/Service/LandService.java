@@ -1,4 +1,4 @@
-package com.example.Farmer.Service;
+package com.example.Farmer.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.Farmer.Entity.Land;
-import com.example.Farmer.Repository.LandRepo;
+import com.example.Farmer.entity.Land;
+import com.example.Farmer.repository.LandRepo;
 
 @Service
 public class LandService {

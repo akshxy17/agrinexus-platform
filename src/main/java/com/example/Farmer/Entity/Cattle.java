@@ -1,4 +1,4 @@
-package com.example.Farmer.Entity;
+package com.example.Farmer.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
