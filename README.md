@@ -129,3 +129,73 @@ Access interactive API documentation at: http://localhost:8080/swagger-ui.html
    ```bash
    git clone <repository-url>
    cd farmer-management-system
+
+Configure database
+
+properties
+# application.properties
+spring.datasource.url=jdbc:mysql://localhost:3306/farmer_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+Build and run
+
+bash
+mvn clean install
+mvn spring-boot:run
+Access the application
+
+Application: http://localhost:8080
+
+Swagger UI: http://localhost:8080/swagger-ui.html
+
+H2 Console (if enabled): http://localhost:8080/h2-console
+
+📝 Logging
+SLF4J with Logback implementation
+
+Structured logging for better traceability
+
+Different log levels (DEBUG, INFO, WARN, ERROR)
+
+Request/Response logging for debugging
+
+🧪 Testing
+API Testing
+Use Postman or Swagger UI for API testing
+
+Pre-configured authentication headers required
+
+Sample Test Data
+The application includes sample data for testing relationships and validations.
+
+🔄 Future Enhancements
+JWT Token-based authentication
+
+Pagination and filtering for list endpoints
+
+File upload for farmer documents
+
+Email notifications
+
+Docker containerization
+
+CI/CD pipeline integration
+
+👥 Contributing
+Fork the repository
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🆘 Support
+For support, email your-support-email or create an issue in the repository.
+
+Happy Farming! 🌾
