@@ -77,4 +77,55 @@ This project demonstrates the use of **JPA Relationships** (One-to-One, One-to-M
 ## 📋 API Documentation
 
 ### Swagger UI
-Access interactive API documentation at:
+Access interactive API documentation at: http://localhost:8080/swagger-ui.html
+
+
+### API Endpoints Overview
+- `GET/POST/PUT/DELETE /api/farmers` - Farmer management
+- `GET/POST/PUT/DELETE /api/crops` - Crop management  
+- `GET/POST/PUT/DELETE /api/lands` - Land management
+- `GET/POST/PUT/DELETE /api/cattles` - Cattle management
+
+---
+
+## 🛠️ Validation & Error Handling
+
+### Field Validations
+- **Bean Validation** annotations (`@NotNull`, `@Size`, `@Email`, etc.)
+- **Custom validators** for business rules
+- **Validation groups** for different scenarios
+
+### Exception Handling
+- **Global Exception Handler** with `@ControllerAdvice`
+- **Custom exception classes** for business logic errors
+- **Structured error responses** with appropriate HTTP status codes
+
+---
+
+## 📊 Database Configuration
+
+### Production
+- **MySQL** database with connection pooling
+- **JPA/Hibernate** for ORM mapping
+- **Liquibase/Flyway** for database migrations (if implemented)
+
+### Development
+- **H2 in-memory database** for testing
+- **Automatic schema generation** during development
+
+---
+
+## 🎯 Getting Started
+
+### Prerequisites
+- Java 17 or higher
+- Maven 3.6+
+- MySQL 8.0+ (for production)
+- Your favorite IDE (IntelliJ, Eclipse, VS Code)
+
+### Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd farmer-management-system
