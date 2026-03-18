@@ -1,4 +1,4 @@
-# 🌱 Farmer Management System
+# 🌾 AgriNexus Platform
 
 A Spring Boot project that manages **Farmers** and their related entities such as **Crops**, **Land**, and **Cattles**.  
 This project demonstrates the use of **JPA Relationships** (One-to-One, One-to-Many, Many-to-One, Many-to-Many) to model real-world farming data with comprehensive security, validation, and documentation features.
